@@ -470,6 +470,18 @@ header button {
   }
 }
 
+/* Sekcja2 portfolio */ 
+
+
+
+
+div.project:hover{
+  opacity: 1;
+}
+div.web:hover img {
+  filter: blur(6px)
+}
+
 .portfolio {
   background-color: black;
   padding: 10px 0 30px;
@@ -486,8 +498,13 @@ header button {
   margin-bottom: 15px;
 }
 
+.portfolio .web {
+  overflow: hidden;
+}
+
 .portfolio .web img {
   width: 100%;
+  transition: 0.2s;
 }
 
 .portfolio .about {
@@ -515,14 +532,16 @@ header button {
 .portfolio .project {
   max-width: 1400px;
   margin: 0 auto 20px;
+  opacity: 0.5;
 }
 
-.portfolio .project:nth-of-type(odd) {
-  background-color: #ff4f2c;
+
+.portfolio .project:nth-child(odd) {
+  background-color: #3b3332;
 }
 
-.portfolio .project:nth-of-type(even) {
-  background-color: #29a6dc;
+.portfolio .project:nth-child(even) {
+  background-color: #4f6772;
 }
 
 @media (min-width:768px) {
