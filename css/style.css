@@ -478,9 +478,7 @@ header button {
 div.project:hover{
   opacity: 1;
 }
-div.web:hover img {
-  filter: blur(6px)
-}
+
 
 .portfolio {
   background-color: black;
@@ -532,7 +530,7 @@ div.web:hover img {
 .portfolio .project {
   max-width: 1400px;
   margin: 0 auto 20px;
-  opacity: 0.5;
+  opacity: 1;
 }
 
 
@@ -597,6 +595,12 @@ div.web:hover img {
   }
 
 
+}
+
+@media(orientation:landscape) and (min-width: 1024px) {
+  .portfolio .project {
+    opacity: 0.5
+  }
 }
 
 
