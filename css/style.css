@@ -221,7 +221,8 @@ header button {
   }
 
   .art2,
-  .art4 {
+  .art4,
+  .art6 {
     transition: 1s;
     transform: translateX(100vw)
   }
@@ -230,7 +231,8 @@ header button {
   .art2.active,
   .art3.active,
   .art4.active,
-  .art5.active {
+  .art5.active,
+  .art6.active {
     transform: translateX(0)
   }
 

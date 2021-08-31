@@ -33,6 +33,10 @@ $(document).on("scroll", function () {
   const art5FromTop = $art5.offset().top;
   const art5Height = $art5.outerHeight();
 
+  const $art6 = $(".art6");
+  const art6FromTop = $art6.offset().top;
+  const art6Height = $art6.outerHeight();
+
   // 1 Sekcja
   if (scrollValue > art1FromTop + art1Height - windowHeight) {
     $art1.addClass("active");
@@ -51,6 +55,10 @@ $(document).on("scroll", function () {
 
   if (scrollValue > art5FromTop + art5Height - windowHeight) {
     $art5.addClass("active");
+  }
+
+  if (scrollValue > art6FromTop + art6Height - windowHeight) {
+    $art6.addClass("active");
   }
 
   if (scrollValue < 100) {
